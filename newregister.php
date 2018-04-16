@@ -20,7 +20,7 @@ $lastname =  mysqli_real_escape_string($db,$_POST['last_name']);
 $myusername = mysqli_real_escape_string($db,$_POST['user_name']);
 $mypassword = mysqli_real_escape_string($db,$_POST['pass_word']); 
 $year = mysqli_real_escape_string($db,$_POST['year']);
-$batch = mysqli_real_escape_string($db,$_POST['batch']);
+$branch = mysqli_real_escape_string($db,$_POST['branch']);
 
 $sql3 = "SELECT user_id FROM authentication WHERE user_name = '$myusername'";
 	$result = mysqli_query($db,$sql3);
