@@ -1,3 +1,6 @@
+create database portkey;
+use portkey;
+
 create table authentication (
 	user_id integer unsigned auto_increment not null unique,
 	user_name varchar(40) not null,
@@ -20,6 +23,7 @@ create table pool (
 	destination varchar(40),
 	source varchar(40),
 	time_departure varchar(40),
+	num_members integer not null,
 	PRIMARY KEY (pool_id)
 );
 
@@ -31,4 +35,3 @@ create table pool_connect (
 	FOREIGN KEY (user_id) REFERENCES user_info (user_id) ON DELETE RESTRICT ON UPDATE CASCADE,
 	FOREIGN KEY (pool_id) REFERENCES pool (pool_id)  ON DELETE RESTRICT ON UPDATE CASCADE
 );
-
