@@ -23,7 +23,7 @@ create table pool (
 	destination varchar(40),
 	source varchar(40),
 	time_departure varchar(40),
-	num_members integer not null,
+	num_members integer not null check (num_members between 0 and 4),
 	PRIMARY KEY (pool_id)
 );
 
@@ -33,5 +33,6 @@ create table pool_connect (
 	pool_id integer unsigned not null,
 	PRIMARY KEY(id),
 	FOREIGN KEY (user_id) REFERENCES user_info (user_id) ON DELETE RESTRICT ON UPDATE CASCADE,
-	FOREIGN KEY (pool_id) REFERENCES pool (pool_id)  ON DELETE RESTRICT ON UPDATE CASCADE
+	FOREIGN KEY (pool_id) REFERENCES pool (pool_id)  ON DELETE RESTRICT ON UPDATE CASCADE,
+	UNIQUE KEY `unique key` (user_id, pool_id)
 );
