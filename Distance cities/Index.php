@@ -1,4 +1,4 @@
-﻿<? php
+<? php
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +19,7 @@
     <div class="jumbotron">
         <div class="container-fluid">
             <h1>Calculator for Portkey!</h1>
-            <form class="form-horizontal">
+            <form class="form-horizontal" target="_blank">
                 <div class="form-group">
                     <label for="from" class="col-xs-2 control-label">From:</label>
                     <div class="col-xs-10">
