@@ -73,6 +73,16 @@ a:hover {
   color: #ffffff;
 }
 
+.sel{
+	width: 100%;
+	background: none;
+	font-size: 22px;
+	color: #ffffff;
+	border: 1px solid #a0b3b0;
+	display: block;
+	transition: border-color .25s ease, box-shadow .25s ease;
+	padding: 5px 10px;
+}
 .tab-content > div:last-child {
   display: none;
 }
