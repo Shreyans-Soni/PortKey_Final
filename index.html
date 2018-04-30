@@ -61,14 +61,7 @@
               </label>
               <input type="text"required autocomplete="off"/>
             </div>
-	<!--	
-          <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
-       -->   
+		  
           <div class="field-wrap">
             <label>
               Set A Password<span class="req">*</span>
@@ -76,6 +69,13 @@
             <input type="password"required autocomplete="off"/>
           </div>
           
+	  <div class="field-wrap">
+		<select name="Role" class="sel">
+			<option value="customer">customer</option>
+			<option value="driver">driver</option>
+			<option value="both">both</option>
+		</select>
+          </div>
           <button type="submit" class="button button-block"/>Get Started</button>
           
           </form>
@@ -100,9 +100,7 @@
             </label>
             <input type="password"required autocomplete="off"/>
           </div>
-          
-          <!--<p class="forgot"><a href="#">Forgot Password?</a></p>
-          -->
+
           <button class="button button-block"/>Log In</button>
           
           </form>
